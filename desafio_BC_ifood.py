@@ -20,7 +20,7 @@ while True:
     elif opcao == "S":
         if len(valor_saque) < 3:
             saque = float(input("Quantos reais você irá sacar? R$ "))
-            if saque > 500 and saque < saldo:
+            if saque > 500 or saque < saldo:
                 print("Não é possível sacar mais do que R$ 500 por vez")
             else:
                 valor_saque.append(saque)
